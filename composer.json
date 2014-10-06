@@ -1,0 +1,7 @@
+{
+    "require": {
+        "twilio/sdk": "*",
+        "firebase/php-jwt": "*",
+        "caesarcipher/caesarcipher": "1.*@dev"
+    }
+}
