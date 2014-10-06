@@ -21,11 +21,11 @@
   $response = json_decode(curl_exec($ch));
 
   header('Content-type: text/xml');
-  $response = new Services_Twilio_Twiml();
+  $TwiML = new Services_Twilio_Twiml();
   if($response->error){
-    $response->message('Something went wrong. Get outta there!');
+    $TwiML->message('Something went wrong. Get outta there!');
   } else {
-    $response->message('Thanks! Our supercomputers are working hard to crack the code now.');
+    $TwiML->message('Thanks! Our supercomputers are working hard to crack the code now.');
   }
-  print $response;
+  print $TwiML;
 
